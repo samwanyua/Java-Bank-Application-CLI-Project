@@ -10,4 +10,11 @@ public class BankAccount {
             previousTransaction = amount;
         }
     }
+
+    public void withdraw(int amount){
+        if(previousTransaction != 0){
+            balance = balance - amount;
+            previousTransaction = amount;
+        }
+    }
 }
