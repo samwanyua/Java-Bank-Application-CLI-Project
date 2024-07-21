@@ -7,7 +7,7 @@ public class BankAccount {
     public void deposit(int amount){
         if(amount != 0){
             balance = balance + amount;
-            previousTransaction = amount;
+            previousTransaction = -amount;
         }
     }
 
@@ -17,4 +17,6 @@ public class BankAccount {
             previousTransaction = amount;
         }
     }
+
+
 }
