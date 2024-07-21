@@ -18,5 +18,16 @@ public class BankAccount {
         }
     }
 
+    public void getPreviousTransaction(){
+        if(previousTransaction  > 0){
+            System.out.println("Deposited: " + previousTransaction);
+        } else if (previousTransaction < 0) {
+            System.out.println("Withdrawn: " + previousTransaction );
+        }
+        else{
+            System.out.println("No transaction happened");
+        }
+    }
+
 
 }
